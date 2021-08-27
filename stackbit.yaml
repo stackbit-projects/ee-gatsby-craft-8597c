@@ -1,0 +1,532 @@
+stackbitVersion: ~0.3.0
+ssgName: gatsby
+publishDir: public
+dataDir: craft
+models:
+  composer:
+    type: data
+    label: Composer
+    file: composer.json
+    fields:
+      - type: object
+        name: require
+        label: Require
+        fields:
+          - type: string
+            name: craftcms/cms
+            label: Craftcms Cms
+          - type: string
+            name: craftcms/webhooks
+            label: Craftcms Webhooks
+          - type: string
+            name: markhuot/craftql
+            label: Markhuot Craftql
+          - type: string
+            name: vlucas/phpdotenv
+            label: Vlucas Phpdotenv
+      - type: object
+        name: autoload
+        label: Autoload
+        fields:
+          - type: object
+            name: psr-4
+            label: Psr 4
+            fields:
+              - type: string
+                name: modules\
+                label: Modules
+      - type: object
+        name: config
+        label: Config
+        fields:
+          - type: boolean
+            name: sort-packages
+            label: Sort Packages
+          - type: boolean
+            name: optimize-autoloader
+            label: Optimize Autoloader
+          - type: object
+            name: platform
+            label: Platform
+            fields:
+              - type: string
+                name: php
+                label: Php
+      - type: object
+        name: scripts
+        label: Scripts
+        fields:
+          - type: list
+            name: post-root-package-install
+            label: Post Root Package Install
+            items:
+              type: string
+  project:
+    type: data
+    label: Project
+    file: config/project.yaml
+    fields:
+      - type: number
+        name: dateModified
+        label: Date Modified
+        subtype: int
+      - type: object
+        name: email
+        label: Email
+        fields:
+          - type: string
+            name: fromEmail
+            label: From Email
+          - type: string
+            name: fromName
+            label: From Name
+          - type: string
+            name: transportType
+            label: Transport Type
+      - type: object
+        name: fieldGroups
+        label: Field Groups
+        fields:
+          - type: object
+            name: 45e30176-7b1a-425f-857c-e4e9cee863e0
+            label: 45 E 30176 7 B 1 A 425 F 857 C E 4 E 9 Cee 863 E 0
+            fields:
+              - type: string
+                name: name
+                label: Name
+      - type: object
+        name: fields
+        label: Fields
+        fields:
+          - type: object
+            name: 2e8db033-d800-46de-bdd8-f56f99add0d6
+            label: 2 E 8 Db 033 D 800 46 De Bdd 8 F 56 F 99 Add 0 D 6
+            fields:
+              - type: string
+                name: contentColumnType
+                label: Content Column Type
+              - type: string
+                name: fieldGroup
+                label: Field Group
+              - type: string
+                name: handle
+                label: Handle
+              - type: string
+                name: instructions
+                label: Instructions
+              - type: string
+                name: name
+                label: Name
+              - type: boolean
+                name: searchable
+                label: Searchable
+              - type: object
+                name: settings
+                label: Settings
+                fields:
+                  - type: string
+                    name: limit
+                    label: Limit
+                  - type: boolean
+                    name: localizeRelations
+                    label: Localize Relations
+                  - type: string
+                    name: selectionLabel
+                    label: Selection Label
+                  - type: string
+                    name: sources
+                    label: Sources
+              - type: string
+                name: translationMethod
+                label: Translation Method
+              - type: string
+                name: type
+                label: Type
+          - type: object
+            name: 8dc9ba7d-58c8-43f8-8b00-676d2e72af70
+            label: 8 Dc 9 Ba 7 D 58 C 8 43 F 8 8 B 00 676 D 2 E 72 Af 70
+            fields:
+              - type: string
+                name: contentColumnType
+                label: Content Column Type
+              - type: string
+                name: fieldGroup
+                label: Field Group
+              - type: string
+                name: handle
+                label: Handle
+              - type: string
+                name: instructions
+                label: Instructions
+              - type: string
+                name: name
+                label: Name
+              - type: boolean
+                name: searchable
+                label: Searchable
+              - type: object
+                name: settings
+                label: Settings
+                fields:
+                  - type: string
+                    name: minuteIncrement
+                    label: Minute Increment
+                  - type: boolean
+                    name: showDate
+                    label: Show Date
+                  - type: boolean
+                    name: showTime
+                    label: Show Time
+              - type: string
+                name: translationMethod
+                label: Translation Method
+              - type: string
+                name: type
+                label: Type
+          - type: object
+            name: a8d9c44e-779f-4e5e-aa76-8d20d87306c4
+            label: A 8 D 9 C 44 E 779 F 4 E 5 E Aa 76 8 D 20 D 87306 C 4
+            fields:
+              - type: string
+                name: contentColumnType
+                label: Content Column Type
+              - type: string
+                name: fieldGroup
+                label: Field Group
+              - type: string
+                name: handle
+                label: Handle
+              - type: string
+                name: instructions
+                label: Instructions
+              - type: string
+                name: name
+                label: Name
+              - type: boolean
+                name: searchable
+                label: Searchable
+              - type: object
+                name: settings
+                label: Settings
+                fields:
+                  - type: string
+                    name: charLimit
+                    label: Char Limit
+                  - type: string
+                    name: code
+                    label: Code
+                  - type: string
+                    name: columnType
+                    label: Column Type
+                  - type: string
+                    name: initialRows
+                    label: Initial Rows
+                  - type: string
+                    name: multiline
+                    label: Multiline
+                  - type: string
+                    name: placeholder
+                    label: Placeholder
+              - type: string
+                name: translationMethod
+                label: Translation Method
+              - type: string
+                name: type
+                label: Type
+      - type: object
+        name: plugins
+        label: Plugins
+        fields:
+          - type: object
+            name: craftql
+            label: Craftql
+            fields:
+              - type: string
+                name: edition
+                label: Edition
+              - type: boolean
+                name: enabled
+                label: Enabled
+              - type: string
+                name: schemaVersion
+                label: Schema Version
+              - type: object
+                name: settings
+                label: Settings
+                fields:
+                  - type: list
+                    name: allowedHeaders
+                    label: Allowed Headers
+                    items:
+                      type: string
+                  - type: boolean
+                    name: maxQueryComplexity
+                    label: Max Query Complexity
+                  - type: boolean
+                    name: maxQueryDepth
+                    label: Max Query Depth
+                  - type: string
+                    name: uri
+                    label: Uri
+                  - type: list
+                    name: verbs
+                    label: Verbs
+                    items:
+                      type: string
+      - type: object
+        name: sections
+        label: Sections
+        fields:
+          - type: object
+            name: fe55d3a2-a081-41f4-9917-69a25ee41499
+            label: Fe 55 D 3 A 2 A 081 41 F 4 9917 69 A 25 Ee 41499
+            fields:
+              - type: boolean
+                name: enableVersioning
+                label: Enable Versioning
+              - type: object
+                name: entryTypes
+                label: Entry Types
+                fields:
+                  - type: object
+                    name: ff91c761-a624-4188-9c56-1f517661eeb9
+                    label: Ff 91 C 761 A 624 4188 9 C 56 1 F 517661 Eeb 9
+                    fields:
+                      - type: object
+                        name: fieldLayouts
+                        label: Field Layouts
+                        fields:
+                          - type: object
+                            name: 237ec80c-6423-45db-89b1-353bfb004615
+                            label: 237 Ec 80 C 6423 45 Db 89 B 1 353 Bfb 004615
+                            fields:
+                              - type: list
+                                name: tabs
+                                label: Tabs
+                                items:
+                                  type: object
+                                  fields:
+                                    - type: object
+                                      name: fields
+                                      label: Fields
+                                      fields:
+                                        - type: object
+                                          name: 2e8db033-d800-46de-bdd8-f56f99add0d6
+                                          label: >-
+                                            2 E 8 Db 033 D 800 46 De Bdd 8 F 56 F 99
+                                            Add 0 D 6
+                                          fields:
+                                            - type: boolean
+                                              name: required
+                                              label: Required
+                                            - type: number
+                                              name: sortOrder
+                                              label: Sort Order
+                                              subtype: int
+                                        - type: object
+                                          name: 80658bbf-47ea-4cba-95c6-64994e777bca
+                                          label: >-
+                                            80658 Bbf 47 Ea 4 Cba 95 C 6 64994 E 777
+                                            Bca
+                                          fields:
+                                            - type: boolean
+                                              name: required
+                                              label: Required
+                                            - type: number
+                                              name: sortOrder
+                                              label: Sort Order
+                                              subtype: int
+                                        - type: object
+                                          name: 8dc9ba7d-58c8-43f8-8b00-676d2e72af70
+                                          label: >-
+                                            8 Dc 9 Ba 7 D 58 C 8 43 F 8 8 B 00 676 D
+                                            2 E 72 Af 70
+                                          fields:
+                                            - type: boolean
+                                              name: required
+                                              label: Required
+                                            - type: number
+                                              name: sortOrder
+                                              label: Sort Order
+                                              subtype: int
+                                        - type: object
+                                          name: a8d9c44e-779f-4e5e-aa76-8d20d87306c4
+                                          label: >-
+                                            A 8 D 9 C 44 E 779 F 4 E 5 E Aa 76 8 D
+                                            20 D 87306 C 4
+                                          fields:
+                                            - type: boolean
+                                              name: required
+                                              label: Required
+                                            - type: number
+                                              name: sortOrder
+                                              label: Sort Order
+                                              subtype: int
+                                    - type: string
+                                      name: name
+                                      label: Name
+                                    - type: number
+                                      name: sortOrder
+                                      label: Sort Order
+                                      subtype: int
+                      - type: string
+                        name: handle
+                        label: Handle
+                      - type: boolean
+                        name: hasTitleField
+                        label: Has Title Field
+                      - type: string
+                        name: name
+                        label: Name
+                      - type: number
+                        name: sortOrder
+                        label: Sort Order
+                        subtype: int
+                      - type: string
+                        name: titleFormat
+                        label: Title Format
+                      - type: string
+                        name: titleLabel
+                        label: Title Label
+              - type: string
+                name: handle
+                label: Handle
+              - type: string
+                name: name
+                label: Name
+              - type: boolean
+                name: propagateEntries
+                label: Propagate Entries
+              - type: object
+                name: siteSettings
+                label: Site Settings
+                fields:
+                  - type: object
+                    name: 700e3318-940a-44d8-888a-2261f85c5b96
+                    label: 700 E 3318 940 A 44 D 8 888 A 2261 F 85 C 5 B 96
+                    fields:
+                      - type: boolean
+                        name: enabledByDefault
+                        label: Enabled By Default
+                      - type: boolean
+                        name: hasUrls
+                        label: Has Urls
+                      - type: string
+                        name: template
+                        label: Template
+                      - type: string
+                        name: uriFormat
+                        label: Uri Format
+              - type: string
+                name: type
+                label: Type
+      - type: object
+        name: siteGroups
+        label: Site Groups
+        fields:
+          - type: object
+            name: f0d78919-a3a8-45ec-aec1-740e8b33555a
+            label: F 0 D 78919 A 3 A 8 45 Ec Aec 1 740 E 8 B 33555 A
+            fields:
+              - type: string
+                name: name
+                label: Name
+      - type: object
+        name: sites
+        label: Sites
+        fields:
+          - type: object
+            name: 700e3318-940a-44d8-888a-2261f85c5b96
+            label: 700 E 3318 940 A 44 D 8 888 A 2261 F 85 C 5 B 96
+            fields:
+              - type: string
+                name: baseUrl
+                label: Base Url
+              - type: string
+                name: handle
+                label: Handle
+              - type: boolean
+                name: hasUrls
+                label: Has Urls
+              - type: string
+                name: language
+                label: Language
+              - type: string
+                name: name
+                label: Name
+              - type: boolean
+                name: primary
+                label: Primary
+              - type: string
+                name: siteGroup
+                label: Site Group
+              - type: number
+                name: sortOrder
+                label: Sort Order
+                subtype: int
+      - type: object
+        name: system
+        label: System
+        fields:
+          - type: string
+            name: edition
+            label: Edition
+          - type: boolean
+            name: live
+            label: Live
+          - type: string
+            name: name
+            label: Name
+          - type: string
+            name: schemaVersion
+            label: Schema Version
+          - type: string
+            name: timeZone
+            label: Time Zone
+      - type: object
+        name: users
+        label: Users
+        fields:
+          - type: boolean
+            name: allowPublicRegistration
+            label: Allow Public Registration
+          - type: string
+            name: photoSubpath
+            label: Photo Subpath
+          - type: boolean
+            name: requireEmailVerification
+            label: Require Email Verification
+  simple:
+    type: data
+    label: Simple
+    file: config/redactor/Simple.json
+    fields:
+      - type: list
+        name: buttons
+        label: Buttons
+        items:
+          type: string
+      - type: boolean
+        name: toolbarFixed
+        label: Toolbar Fixed
+  standard:
+    type: data
+    label: Standard
+    file: config/redactor/Standard.json
+    fields:
+      - type: list
+        name: buttons
+        label: Buttons
+        items:
+          type: string
+      - type: list
+        name: plugins
+        label: Plugins
+        items:
+          type: string
+      - type: boolean
+        name: linkNewTab
+        label: Link New Tab
+      - type: boolean
+        name: toolbarFixed
+        label: Toolbar Fixed
